@@ -836,8 +836,7 @@ height: fit-content;
   }
   .column1{
  /* background-image:  linear-gradient(rgba(0, 0, 0, 0.329), rgb(0, 0, 0)),url(/hero-images/mobile-hero-bg-inverted.png); */
- /* background-image: url("../hero-images/mobile-hero-bg-inverted.png"); */
- background-image: url("../new2.png");
+  background-image: url("../hero-images/mobile-hero-bg-inverted.png");
   background-size: cover;
   background-repeat: no-repeat;
   
