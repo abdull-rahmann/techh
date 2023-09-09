@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <meta charset="utf-8">
+  <title>Techbiz Limited || Your Digital Partner</title>
+  <link rel="icon" type="image/png" href="used-images/favicon.png">
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicon -->
+  <link href="img/favicolon.ico" rel="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+ 
+  <!-- Logos-->
+  <!-- Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+
+  <!--Logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+
+
+</head>
+
+<body>
+  <div id="preloader" style="color: #fff;">
+       <video id="preloader-video" autoplay muted loop style="width: 40%; height: 40%;  border-bottom: white; color: #fff;">
+        <source src="used-images/pulse.mp4" type="video/mp4">
+      </video>
+      
+      </div>
+
+    <script>
+      window.onload = function() {
+    var preloader = document.getElementById("preloader");
+    var content = document.getElementById("pageContent");
+  
+    // Hide preloader and show content
+   preloader.style.display = "none";
+   content.style.display = "block";
+  };
+    </script>
+
+   <div class="pageContent" id="pageContent">
+    <section class="navigation">
+      <div class="logos">
+          <div class="logo">
+              <img src="used-images/parallax-images/logo.png" alt="">
+          </div>
+          <div class="logo2">
+              <img src="used-images/parallax-images/logo2.png" alt="" class="hide">
+          </div>
+      </div>
+      <div class="icons">
+          <nav class="navbar">
+            <a class="line hovering" href="#blog">OUR BLOG</a>
+              <a class="line hovering" href="#journey">OUR JOURNEY</a>
+              <a class="contact-btn hovering" href="#contact">TALK TO US</a>
+          </nav>
+          
+          <i class="fas fa-bars" id="menu-bars"></i>
+      </div>
+  </section>
+
+ <script>
+  let menu = document.querySelector('#menu-bars');
+  let navbar = document.querySelector('.navbar');
+  let header = document.querySelector('.navigation');
+  let logo1 = document.querySelector('.logo img'); // Target the img element within .logo
+  let logo2 = document.querySelector('.logo2 img'); // Target the img element within .logo2
+  let logoImages = ['used-images/parallax-images/logo.png', 'used-images/parallax-images/logo2.png']; // Array of logo images
+  let currentLogoIndex = 0; // Index of the current logo image
+
+  menu.onclick = () => {
+      menu.classList.toggle('fa-times');
+      navbar.classList.toggle('active');
+  };
+
+  let sections = document.querySelectorAll('section');
+  let navLinks = document.querySelectorAll('.navigation .navbar a');
+
+  window.onscroll = () => {
+      menu.classList.remove('fa-times');
+      navbar.classList.remove('active');
+
+      sections.forEach(section => {
+          let top = window.scrollY;
+          let height = section.offsetHeight;
+          let offset = section.offsetTop - 150;
+          let id = section.getAttribute('id');
+
+          if (top >= offset && top < offset + height) {
+              navLinks.forEach(links => {
+                  links.classList.remove('active');
+                  document.querySelector('.navigation .navbar a[href*=' + id + ']').classList.add('active');
+              });
+          }
+      });
+
+      // Change logo image and header background color
+      if (window.scrollY > 550) {
+          header.style.backgroundColor = 'white';
+      //    header.style.margin = '0px';
+          logo1.style.opacity = 0;
+          logo2.style.opacity = 1;
+      } else {
+          header.style.backgroundColor = 'black';
+          logo1.style.opacity = 1;
+          logo2.style.opacity = 0;
+        //  header.style.marginTop = '20px';
+      }
+  };
+
+  // Change the logo image when clicked
+  logo1.addEventListener('click', () => {
+      currentLogoIndex = (currentLogoIndex + 1) % logoImages.length;
+      logo1.src = logoImages[currentLogoIndex];
+  });
+
+  // Initial setup to hide one of the logos
+  logo2.style.opacity = 0;
+  logo1.style.opacity = 1;
+
+ </script>
+
+  <section class="header ">
+   
+    <div class="image-container" >
+      <div class="image-box one" onclick="window.location.href='#digital'">
+        <img src="hero-images/digital-hero-bg.svg" alt="Image 5" style="width:1px;">
+          <div class="image-caption">
+            <div class="caption-container">
+            <h1>DIGITAL SERVICES</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam voluptatibus quos aperiam nesciunt inventore ex facere vel.</p>
+            <label class="collection wow fadeInUp">
+              <input type="checkbox">
+              <div>
+                  <span></span>
+              </div>
+          </label>
+          </div>
+         
+          </div>
+      </div>
+      
+      <div class="image-box two" onclick="window.location.href='#resource'">
+        <img src="hero-images/resource-hero-bg.svg" alt="Image 5" style="width:1px;">
+          <div class="image-caption">
+            <div class="caption-container">
+              <h1>RESOURCE AUGMENTATION & DEV OPS</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam voluptatibus quos aperiam nesciunt inventore ex facere vel.</p>
+              <label class="collection wow fadeInUp">
+                <input type="checkbox">
+                <div>
+                    <span></span>
+                </div>
+            </label>
+            </div>
+          </div>
+      </div>
+      
+      <div class="image-box three"  onclick="window.location.href='#cloud'">
+        <img src="hero-images/enterprise-svg.svg" alt="Image 5" style="width:1px;">
+          <div class="image-caption">
+            <div class="caption-container">
+              <h1>CLOUD AND AI</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam voluptatibus quos aperiam nesciunt inventore ex facere vel.</p>
+              <label class="collection wow fadeInUp">
+                <input type="checkbox">
+                <div>
+                    <span></span>
+                </div>
+            </label>
+          </div>
+          </div>
+      </div>
+      <div class="image-box four"  onclick="window.location.href='#enterprise'">
+        <img src="hero-images/products-hero-bg.svg" alt="Image 5" style="width:1px;">
+       <div class="image-caption">
+         <div class="caption-container">
+          <h1>OUR PRODUCTS</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam voluptatibus quos aperiam nesciunt inventore ex facere vel.</p>
+              <label class="collection wow fadeInUp">
+                <input type="checkbox ">
+                <div>
+                    <span></span>
+                </div>
+            </label>
+        </div>
+       </div>
+   </div>
+      <div class="image-box five" onclick="window.location.href='#enterprise'">
+          <img src="hero-images/enterprise-heroo-bg.svg" alt="Image 5" style="width:1px;height: 1px;">
+          <div class="image-caption">
+            <div class="caption-container">
+              <h1>ENTERPRISE SOLUTIONS</h1>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut numquam voluptatibus quos aperiam nesciunt inventore ex facere vel.</p>
+           <label class="collection wow fadeInUp">
+            <input type="checkbox ">
+            <div>
+                <span></span>
+            </div>
+        </label>
+            </div>
+          </div>
+      </div>
+      
+  </div>
+
+
+  </section>
+
+ 
+ 
+ 
+  <div class="new-row  wow fadeInLeft" id="digital">
+    
+    
+    <div class="new-column text">
+     <div class="digital-container" >
+      <div class="inner-container container " >
+        <div class="section-title" >
+          <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" style="color: #F1F1F9;">DIGITAL SERVICES</h1>
+          <hr style="color: #F1F1F9;margin-bottom: 10px;">
+          <p >Our Featured Services</p>  
+          <p style="margin-top: -20px;" > Quality Design Transformations</p>   
+        </div>
+        <div class="digital-row row">
+          <div class="digital-col wow fadeInLeft">
+            <img src="used-images/digital-services/ui.png" alt="">
+                <h3>UI & ux </h3>
+                <hr style="color: #fff;">
+                <p style="color: #fff;">Bring new global technologies to our region. The technologies should be economical, efficient, durable
+                  </p>
+          </div>
+          <div class="digital-col wow fadeInUp">
+            <img src="used-images/digital-services/mobile.png" alt="">
+                <h3>MOBILE APP DEV'T </h3>
+                <hr style="color: #fff;">
+                <p style="color: #fff;">Bring new global technologies to our region. The technologies should be economical, efficient, durable
+                 </p>         
+          </div>
+          <div class="digital-col blackbg wow fadeInRight">
+            <img src="used-images/digital-services/web.png" alt="">
+                <h3>WEB APP DEV'T </h3>
+                <hr>
+                <p >Bring new global technologies to our region. The technologies should be economical, efficient, durable
+                 </p>         
+          </div>
+          <div class="digital-col blackbg wow fadeInRight" data-wow-delay="0.5s">
+            <img src="used-images/digital-services/product-devt.png" alt="">
+                <h3>UI & ux </h3>
+                <hr>
+                <p>Bring new global technologies to our region. The technologies should be economical, efficient, durable
+                </p>        
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    <div class="new-column column1">
+   
+    </div>
+  </div>
+
+  <div class="resource-main wow fadeInUp" data-wow-delay="0.5s">
+    <div class="resource" id="resource" style="padding: 0;">  
+       <div class="row" style="width: 100%; margin: auto; " >
+        <div class="col-md-5  order-sm-1" style=" background-color: #0DB4D7;padding-top: 50px;padding-bottom: 50px;">
+          <div class="section-title" >
+            <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" style="text-align: center; padding-top: 60px; width: 80%; margin: auto; color: #fff;">RESOURCE AUGMENTATION & DEV OPS</h1>
+            <hr style="color: #fff; padding-top: 30x;margin-top: 40px;">
+          </div>
+         <p class="wow fadeInUp">Piloted by knowledge and expertise of our highly qualified software development team, we help businesses convert their strategy into value-added innovative solutions that improve organisational performance. Right from identifying the industry needs, strategic planning, sculpting ideas, storytelling, to integrations, evaluating risk factors and analysing post-deployment performance, we deliver them all.
+         </p>
+
+         
+        </div>
+        <div class="col-md-7 order-sm-2" style=" background-color: #F1F1F9; padding-top: 50px;padding-bottom: 50px;">
+          <div class="row" >
+            <div class="col-md-12 col-sm-12 col-lg-6 wow fadeInLeft " style="margin-bottom: 20px;  margin-left:0 ; ">
+              <div class="container container-fluid" style="padding: 0px; width: 100%; margin-right: 10px;">
+                <div class="card">
+                  <div class="imgBx">
+                    <img src="used-images/Rsource-augmentation/cloud-svg.svg" class="img-fluid">
+                  </div>
+                  <div class="contentBx container-fluid" style="padding: 0px;">
+                    <h3>Cloud Architecture</h3>
+                    
+                    <div class="color">
+                      <h2>To be the preferred choice for the delivery of innovative and integrative public and private sector ICT solutions and services.</h2>
+                       </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+            <div class="col-md-12 col-sm-12 col-lg-6 wow fadeInUp " style="margin-bottom: 20px; margin-left:0 ; ">
+              <div class="container container-fluid"  style="padding: 0px; width: auto;">
+                <div class="card">
+                  <div class="imgBx">
+                    <img src="used-images/Rsource-augmentation/rsrc.svg" class="img-fluid">
+                  </div>
+                  <div class="contentBx container-fluid">
+                    <h3>Resource Augmentation</h3>
+                    <div class="color">
+                      <h2>To be the preferred choice for the delivery of innovative and integrative public and private sector ICT solutions and services.</h2>
+                       </div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-6  wow fadeInRight ">
+              <div class="container container-fluid"  style="padding: 0px; width: auto;">
+                <div class="card">
+                  <div class="imgBx">
+                    <img src="used-images/Rsource-augmentation/dev-ops.svg" class="img-fluid">
+                  </div>
+                  <div class="contentBx container-fluid">
+                    <h3>Dev Ops</h3>
+                    
+                    <div class="color">
+                      <h2>To be the preferred choice for the delivery of innovative and integrative public and private sector ICT solutions and services.
+                      </h2>
+                       </div>
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+     </div>
+  </div>
+
+
+
+  
+ <!-- <div class="resource-main">
+    <div class="resource" id="resource">
+     <div class="section-title" >
+       <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" style="text-align: center; padding-top: 100px;">RESOURCE AUGMENTATION & DEV OPS</h1>
+       <hr style="color: #000;">
+     </div>
+    
+       <div class="row" >
+         <div class="col-md-4 col-sm-6  wow fadeInLeft " style="margin-bottom: 20px;  margin-left:0 ; ">
+           <div class="container container-fluid" style="padding: 0px; width: 100%; margin-right: 10px;">
+             <div class="card">
+               <div class="imgBx">
+                 <img src="used-images/Rsource-augmentation/cloud-svg.svg" class="img-fluid">
+               </div>
+               <div class="contentBx container-fluid" style="padding: 0px;">
+                 <h3>Cloud Architecture</h3>
+                 
+                 <div class="color">
+                   <h2>To be the preferred choice for the delivery of innovative and integrative public and private sector ICT solutions and services.</h2>
+                    </div>
+               
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4 col-sm-6  wow fadeInUp " style="margin-bottom: 20px; margin-left:0 ; ">
+           <div class="container container-fluid"  style="padding: 0px; width: auto;">
+             <div class="card">
+               <div class="imgBx">
+                 <img src="used-images/Rsource-augmentation/rsrc.svg" class="img-fluid">
+               </div>
+               <div class="contentBx container-fluid">
+                 <h3>Resource Augmentation</h3>
+                 <div class="color">
+                   <h2>To be the preferred choice for the delivery of innovative and integrative public and private sector ICT solutions and services.</h2>
+                    </div>
+               
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="col-md-4 col-sm-6  wow fadeInRight ">
+           <div class="container container-fluid"  style="padding: 0px; width: auto;">
+             <div class="card">
+               <div class="imgBx">
+                 <img src="used-images/Rsource-augmentation/dev-ops.svg" class="img-fluid">
+               </div>
+               <div class="contentBx container-fluid">
+                 <h3>Dev Ops</h3>
+                 
+                 <div class="color">
+                   <h2>To be the preferred choice for the delivery of innovative and integrative public and private sector ICT solutions and services.
+                   </h2>
+                    </div>
+             
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+   </div>
+-->
+
+   
+  <!-- DIGITAL SERVICES 1  -->
+   
+ 
+ 
+
+
+
+  <Section id="paralax">
+    
+    <h1 class="ps-lg-0" data-wow-delay="0.1s"> <span class="white">THERE ARE THRE RESPONSES TO A WORK OF ART  YES, NO AND WOW. <br> </span>
+      WOW <span class="orange">IS WAT WE AIM FOR ! </span></h1>
+
+  </Section>
+
+<!-- CLOUD AND AI -->
+<div class="cloud-bg">
+  <div class="section-title" id="cloud">
+   <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" style="text-align: center; margin-top: 60px; color: #0DB4D7;">CLOUD AND AI</h1>
+   <hr style="color: #0DB4D7;">
+   <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                
+ </div>
+  <div class="cloud-container row " style="margin: auto;" >
+   <div class="cardd wow fadeInLeft col-md-4 " >
+       <div class="face face1">
+           <div class="content">
+               <img src="used-images/Cloud-Ai/microsoft.png">
+               <h3>MICROSOFT</h3>
+           </div>
+       </div>
+       <div class="face face2">
+           <div class="content">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                  
+           </div>
+       </div>
+   </div>
+   <div class="cardd wow fadeInUp col-md-4" style="background-color: transparent;">
+       <div class="face face1">
+           <div class="content">
+               <img src="used-images/Cloud-Ai/iot.png">
+               <h3>IOT</h3>
+           </div>
+       </div>
+       <div class="face face2">
+           <div class="content">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                 
+           </div>
+       </div>
+   </div>
+   <div class="cardd wow fadeInRight col-md-4" >
+       <div class="face face1">
+           <div class="content">
+               <img src="used-images/Cloud-Ai/sap.png">
+               <h3>SAP B1</h3>
+           </div>
+       </div>
+       <div class="face face2">
+           <div class="content">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                 
+           </div>
+       </div>
+   </div>
+ </div>
+ </div>
+
+  <!-- Feature Start -->
+ <!-- <section id="feature" style=" background-color: #ffffff71;">
+    <div class="container-fluid overflow-hidden py-5 px-lg-0">
+      <div class="container feature py-5 px-lg-0">
+        <div class="row g-5 mx-lg-0" style="margin-top: 0px;">
+          <div class="col-lg-6 feature-text wow fadeInUp featurebg" data-wow-delay="0.1s">
+
+            <h1 class="mb-5">Trusted Tech Solutions Provider Since 2005</h1>
+            <div class="d-flex mb-5 wow fadeInUp" data-wow-delay="0.3s">
+              <i class="fa fa-code  fa-3x flex-shrink-0" style="  color: rgb(212, 148, 28);"></i>
+              <div class="ms-4">
+                <h5> <span style="color: rgb(212, 148, 28);">Expert</span> Software Solutions</h5>
+                <p class="mb-0">Seasoned engineers dedicated to delivering cutting-edge software solutions for your
+                  business needs.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
+              <i class="fa fa-clock  fa-3x flex-shrink-0" style="  color: rgb(212, 148, 28);"></i>
+              <div class="ms-4">
+                <h5> <span style="color: rgb(212, 148, 28);">Rapid</span> Development</h5>
+                <p class="mb-0">Swift solutions to ensure your digital projects are brought to life without delay.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
+              <i class="fa fa-users  fa-3x flex-shrink-0" style="  color: rgb(212, 148, 28);"></i>
+              <div class="ms-4">
+                <h5> <span style="color: rgb(212, 148, 28);">24/7</span> Technical Support</h5>
+                <p class="mb-0">Continuous technical assistance for all your inquiries and concerns.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
+            <div class="position-relative h-100">
+              <img class="position-absolute img-fluid w-100 h-100" src="assets/features.jpg"
+                style="object-fit: cover;  border-radius: 170px 20px 20px 20px; " alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+  <!-- Feature End -->
+  <div class="counter-wrapper">
+    <div class="counter wow fadeInLeft">
+      <div id="cap" class="ps-lg-0 " data-wow-delay="0.1s">
+        <img src="used-images/counter/years.svg" alt="" style="width: 160px; height: 100px;">
+        </div>
+        <h1 class="count" data-target="15">0</h1>
+        <p>YEARS OF EXPERIENCE</p>
+    </div>
+    <div class="counter wow fadeInUp">
+      <div class="ps-lg-0 " data-wow-delay="0.1s">
+        <img src="used-images/counter/customers.svg" alt="" style="width: 140px; height: 80px;">
+        </div>
+        <h1 class="count" data-target="1000">0</h1>
+        <p>CUSTOMERS SERVED</p>
+    </div>
+    <div class="counter wow fadeInUp">
+      <div class="ps-lg-0 " data-wow-delay="0.1s">
+        <img src="used-images/counter/technology.svg" alt="" style="width: 140px; height: 80px;">
+        </div>
+        <h1 class="count" data-target="50">0</h1>
+        <p>TECHNOLOGY PARTNERS</p>
+    </div>
+    <div class="counter wow fadeInRight">
+      <div class="ps-lg-0 " data-wow-delay="0.1s">
+        <img src="used-images/counter/expert.svg" alt="" style="width: 140px; height: 80px;">
+        </div>
+        <h1 class="count" data-target="30">0</h1>
+        <p>EXERT ENGINEERS</p>
+    </div>
+</div>
+
+    <h2 class="laptop-h wow fadeInRight">"Navigating the Digital Frontier Together – Your Vision, Our Expertise."</h2>
+    <div style="text-align: center; width: 83%; margin: auto;" class="container-fluid " >
+      <img src="athlete.png" alt="" class="img-fluid wow fadeInUp">
+  </div>
+  
+     <!--  ENTERPRISE SOLUTIONS -->
+   <div class="enterprise-main-container">
+   
+   <div class="enterprise">
+      <div class="row" style="width: 100%;">
+        <div class="col-md-7" style="background-color:#0DB4D7;">
+          <div class="section-title" id="enterprise">
+            <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" style="text-align: center; padding-top: 60px;">ENTERPRISE SOLUTIONS</h1>
+            <hr style="color: #000; margin-bottom: 0;">
+          </div>
+          <div class="row" style="width: 85%; padding: 80px 0; padding-top: 0;">
+ 
+            <div class="col-md-6 col-sm-6  wow fadeInUp" style="margin-bottom: 10px;">
+              <div class="enterprise-container" style="margin: auto;">
+                <img src="used-images/enterprise/erp1.png" alt="Image" class="img-fluid">
+                <div class="content">
+                    <h1>Enterpise 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            </div>
+             
+              <div class="col-md-6 col-sm-6  wow fadeInUp" style="margin-bottom: 10px;">
+                <div class="enterprise-container" style="margin: auto;">
+                  <img src="used-images/enterprise/erp2.png" alt="Image" class="img-fluid">
+                  <div class="content">
+                      <h1>Enterpise 1</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-6 col-sm-6 wow fadeInRight" style="margin-bottom: 10px;">
+                <div class="enterprise-container" style="margin: auto;">
+                  <img src="used-images/enterprise/contact.webp" alt="Image" class="img-fluid">
+                  <div class="content">
+                      <h1>Enterprise 3</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </div>
+              </div>
+        
+              <div class="col-md-6 col-sm-6 wow fadeInUp">
+                <div class="enterprise-container" style="margin: auto;">
+                  <img src="used-images/enterprise/erp1.png" alt="Image" class="img-fluid">
+                  <div class="content">
+                      <h1>Enterpise 4</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+              </div>
+              </div>
+              
+        
+            </div>
+        </div>
+        <div class="col-md-5"  >
+          
+         </div>
+      </div>
+   <!--  <div class="row row2" style="margin-top: 10px;">
+      
+       <div class="col wow fadeInUp">
+         <div class="enterprise-container">
+           <img src="used-images/products-imgs/crm.png" alt="Image">
+           <div class="content">
+               <h1>Enterpise 4</h1>
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+           </div>
+       </div>
+       </div>
+     </div>
+ -->
+ </div>
+ </div>
+ 
+
+   <!--  ENTERPRISE SOLUTIONS -->
+  <!-- <div class="enterprise-main-container">
+   <div class="section-title" id="enterprise">
+    <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" style="text-align: center; padding-top: 60px;">ENTERPRISE SOLUTIONS</h1>
+    <hr style="color: #000;">
+  </div>
+
+  <div class="enterprise">
+    <div class="row">
+
+    <div class="col-md-4 col-sm-6  wow fadeInUp" style="margin-bottom: 10px;">
+        <div class="enterprise-container" style="margin: auto;">
+          <img src="used-images/products-imgs/crm.png" alt="Image" class="img-fluid">
+          <div class="content">
+              <h1>Enterpise 1</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-4 col-sm-6  wow fadeInUp" style="margin-bottom: 10px;">
+        <div class="enterprise-container" style="margin: auto;">
+          <img src="used-images/products-imgs/crm.png" alt="Image" class="img-fluid">
+          <div class="content">
+              <h1>Enterpise 1</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+      </div>
+      </div>
+      <div class="col-md-4 col-sm-6 wow fadeInRight" style="margin-bottom: 10px;">
+        <div class="enterprise-container" style="margin: auto;">
+          <img src="used-images/products-imgs/crm.png" alt="Image" class="img-fluid">
+          <div class="content">
+              <h1>Enterprise 3</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+      </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 wow fadeInUp">
+        <div class="enterprise-container" style="margin: auto;">
+          <img src="used-images/products-imgs/crm.png" alt="Image" class="img-fluid">
+          <div class="content">
+              <h1>Enterpise 4</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+      </div>
+      </div>
+      
+
+    </div>
+ 
+</div>
+</div>
+-->
+
+
+
+  <section id="break" class="secondbreak">
+    <h2><span>If you can dream </span> <span style="color: red;"> it.</span> <span style=" color: #fff;">We can build
+        it.</span></h2>
+    <div class="underline" style="color: #fff;"></div>
+    <p style="color: #fff;">Your custom solution awaits. Let's make it happen together.</p>
+  </section>
+
+
+
+
+  <div class="row journey" id="journey" style="height: fit-content; width: 90%; margin: auto; padding-top: 60px;">
+    <div class="col-md-6 col-sm-12">
+      <img src="zps.jpg" alt="" class="img-fluid"  >
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="section-title">
+        <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" >OUR JOURNEY</h1>
+        <hr style="color: #000; padding-top: 30x;margin: 10px 0; text-align: left;margin-left: 0;">
+      </div>
+      <h3 >"Success is not the destination; it's the journey we take together, fueled by innovation and unwavering determination."</h3>
+     <p class="wow fadeInUp">Piloted by knowledge and expertise of our highly qualified software development team, we help businesses convert their strategy into value-added innovative solutions that improve organisational performance. Right from identifying the industry needs, strategic planning, sculpting ideas, storytelling, to integrations, evaluating risk factors and analysing post-deployment performance, we deliver them all.
+     </p>
+
+    </div>
+  </div>
+
+ 
+  <!-- Time line Start -->
+<!-- <section id="journey" >
+
+    <div class="col-md-12 col-sm-12" style="background-color: transparent; padding-top: 50px;">
+      <div class="section-title">
+        <h1 class="heading bold" style="text-align: center;">Our Journey that built the company</h1>
+        <hr>
+      </div>
+      <section class="timeline wow fadeInLeft" data-wow-delay="0.1s">
+
+        <div class="container">
+          <div class="timeline-item">
+          
+            <div class="timeline-content js--fadeInLeft">
+              <h2>Title</h2>
+              <div class="date">1 MAY 2016</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate
+                saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores.
+                Alias, ullam.</p>
+              <a class="bnt-more" href="javascript:void(0)">More</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+          
+            <div class="timeline-content js--fadeInLeft">
+              <h2 style="margin-top: 10px;">Title</h2>
+              <div class="date">1 MAY 2016</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate
+                saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores.
+                Alias, ullam.</p>
+              <a class="bnt-more" href="javascript:void(0)">More</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+
+            <div class="timeline-img"></div>
+
+            <div class="timeline-content js--fadeInLeft">
+              <div class="date">3 JUN 2016</div>
+              <h2>Quote</h2>
+              <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor
+                iste fugit totam quasi inventore!</blockquote>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+  </section>
+
+-->
+
+  <!--Partners -->
+  <div class="section-title" style="    padding-top: 50px; margin-bottom: -10px; background-color: #fff;">
+    <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" style="text-align: center; color: rgb(212, 148, 28);">OUR PARTNERS
+    </h1>
+    <hr style="color: #000; margin-bottom: -20px;">
+  </div>
+  <div class="partners-container" style="width: 100%; color: #fff;">
+  <div class="brand-carousel section-padding owl-carousel" style=" width: 70%; margin-top: -600px; padding-bottom: 0px;  background-color: #fff; margin: auto;">
+
+    <div class="single-logo ">
+      <img src="https://i.postimg.cc/d14GzKHn/brand-4.png"  alt="">
+    </div>
+   
+    <div class="single-logo">
+      <img src="https://i.postimg.cc/B6qxYvgX/brand-3.png" alt="">
+    </div>
+    <div class="single-logo">
+      <img src="https://i.postimg.cc/d14GzKHn/brand-4.png" alt="">
+    </div>
+    <div class="single-logo ">
+      <img src="https://i.postimg.cc/d14GzKHn/brand-4.png" alt="">
+    </div>
+    <div class="single-logo">
+      <img src="https://i.postimg.cc/x8ZM13Sz/brand-5.png" alt="">
+    </div>
+    <div class="single-logo">
+      <img src="https://i.postimg.cc/B6qxYvgX/brand-3.png" alt="">
+    </div>
+     <div class="single-logo">
+      <img src="https://i.postimg.cc/B6qxYvgX/brand-3.png" alt="">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="row" style="width: 85%; margin: auto;">
+  <div class="leftcolumn">
+    <div class="w3-content w3-display-container" style="max-width:800px">
+      <img class="mySlides img-fluid" src="used-images/parallax-images/parallax2.jpg" style="width:100%; " >
+      <img class="mySlides img-fluid" src="used-images/parallax-images/parallax3.jpg" style="width:100%">
+      <img class="mySlides img-fluid" src="used-images/parallax-images/parallax2.jpg" style="width:100%">
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+      </div>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      
+    </div>
+    
+  </div>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+-->
+<section class="blog container-fluid" id="blog" style="margin-bottom: 60px;">
+  <div class="container-fluid" style="padding-bottom: 100px;">
+
+    <div class="section-title" style="    padding-top: 40px; margin-bottom: -10px; background-color: transparent;">
+      <h1 class="heading bold wow fadeInLeft" data-wow-delay="0.1s" style=" color: #E8B620;">OUR BLOG
+      </h1>
+      <hr style="color: #000; margin-bottom: 10px;">
+    </div>
+
+    <p class="section-text" >
+      Et harum quidem rerum facilis est et expedita distinctio nam libero tempore cum soluta nobis eligendi
+      cumque.
+    </p>
+
+    <ul class="blog-list row" style=" padding: 40px 30px;  width: 90%;
+    margin: auto;">
+
+      <li class="col col-sm-12  col-md-6 col-lg-4 fadeInUp" data-wow-delay="4s"  style="margin-bottom: 25px;">
+        <div class="blog-card" >
+
+          <figure class="blog-banner">
+            <img src="used-images/mobile-hero.jpg" alt="" class="img-fluid">
+          </figure>
+
+          <div class="blog-meta">
+
+            <span>
+              <ion-icon name="calendar-outline"></ion-icon>
+
+              <time datetime="2021-04-10">January 10 2023</time>
+            </span>
+
+            <span>
+              <ion-icon name="person-outline"></ion-icon>
+
+              <span>admin</span>
+            </span>
+
+          </div>
+
+          <h3 class="blog-title">NEW ENTERPRISE SOLUTION TO BE LAUNCHED BY LATE THIS WEEK</h3>
+
+         
+          <a href="#">READ MORE  <ion-icon name="chevron-forward-outline"></ion-icon></a>
+
+        </div>
+      </li>
+
+      <li class="col col-sm-12 col-md-6 col-lg-4 wow fadeInUp" style="margin-bottom: 25px;">
+        <div class="blog-card">
+
+          <figure class="blog-banner">
+            <img src="used-images/devt-hero.jpg" alt="" class="img-fluid">
+          </figure>
+
+          <div class="blog-meta">
+
+            <span>
+              <ion-icon name="calendar-outline"></ion-icon>
+
+              <time datetime="2021-04-10">april 10 2022</time>
+            </span>
+
+            <span>
+              <ion-icon name="person-outline"></ion-icon>
+
+              <span>admin</span>
+            </span>
+
+          </div>
+
+          <h3 class="blog-title">NEW ENTERPRISE SOLUTION TO BE LAUNCHED BY LATE THIS WEEK</h3>
+
+          
+          <a href="#">READ MORE  <ion-icon name="chevron-forward-outline"></ion-icon></a>
+          
+
+        </div>
+      </li>
+
+      <li class="col col-sm-12 col-md-6 col-lg-4 wow fadeInRight" style="margin-bottom: 25px;">
+        <div class="blog-card">
+
+          <figure class="blog-banner">
+            <img src="used-images/parallax-images/parallax3.jpg" alt="" class="img-fluid">
+          </figure>
+
+          <div class="blog-meta">
+
+            <span>
+              <ion-icon name="calendar-outline"></ion-icon>
+
+              <time datetime="2021-04-10">October 15 2024</time>
+            </span>
+
+            <span>
+              <ion-icon name="person-outline"></ion-icon>
+
+              <span>admin</span>
+            </span>
+
+          </div>
+
+          <h3 class="blog-title">NEW ENTERPRISE SOLUTION TO BE LAUNCHED BY LATE THIS WEEK</h3>
+
+      
+          <a href="#">READ MORE  <ion-icon name="chevron-forward-outline"></ion-icon></a>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+  <!-- Testimonial Start -->
+  <section id="testimonial">
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="container py-5">
+        <div class="text-center section-title">
+          <h1 class="heading bold  wow fadeInLeft" data-wow-delay="0.1s">CLIENT FEEDBACK
+          </h1>
+          <hr style="color: #000;">
+          <h1 class="mb-0" style=" font-size: 27px;
+          color: #000; ">Hear What Our Clients Say!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+          <div class="testimonial-item p-4 my-5">
+            <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+            <div class="d-flex align-items-end mb-4">
+              <img class="img-fluid flex-shrink-0" src="used-images/testimonials/testimonial-1.jpg" style="width: 80px; height: 80px;">
+              <div class="ms-4">
+                <h5 class="mb-1">Client Name</h5>
+                <p class="mb-0">Technology Enthusiast</p>
+              </div>
+            </div>
+            <p class="mb-0">Impressed by the quality of solutions. Their team provided quick and innovative service.
+              Highly recommended!</p>
+          </div>
+          <div class="testimonial-item p-4 my-5">
+            <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+            <div class="d-flex align-items-end mb-4">
+              <img class="img-fluid flex-shrink-0" src="used-images/testimonials/testimonial-2.jpg" style="width: 80px; height: 80px;">
+              <div class="ms-4">
+                <h5 class="mb-1">Client Name</h5>
+                <p class="m-0">Digital Strategist</p>
+              </div>
+            </div>
+            <p class="mb-0">Outstanding service! Their team provided expert solutions quickly and professionally.
+              Satisfied customer!</p>
+          </div>
+          <div class="testimonial-item p-4 my-5">
+            <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+            <div class="d-flex align-items-end mb-4">
+              <img class="img-fluid flex-shrink-0" src="used-images/testimonials/testimonial-3.jpg" style="width: 80px; height: 80px;">
+              <div class="ms-4">
+                <h5 class="mb-1">Client Name</h5>
+                <p class="m-0">Tech Innovator</p>
+              </div>
+            </div>
+            <p class="mb-0">I'm amazed by their expertise. They provided solutions for my projects that others couldn't.
+              Great job!</p>
+          </div>
+          <div class="testimonial-item p-4 my-5">
+            <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
+            <div class="d-flex align-items-end mb-4">
+              <img class="img-fluid flex-shrink-0" src="used-images/testimonials/testimonial-4.jpg" style="width: 80px; height: 80px;">
+              <div class="ms-4">
+                <h5 class="mb-1">Client Name</h5>
+                <p class="m-0">Tech Enthusiast</p>
+              </div>
+            </div>
+            <p class="mb-0">Excellent service! Their skilled engineers saved my projects. Grateful for their support!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial End -->
+
+
+  <!-- Contact Start -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="comingsoon-loading">
+        <h1 data-text="CONTACT US" style="border-color: #E8B620 ;">CONTACT US</h1>
+      </div>
+      <hr style="color: #fff;">
+
+      <p class="section-text">
+        For further information on any of our services please get in touch with us.
+      </p>
+
+      <div class="contact-wrapper">
+        <form action="" class="contact-form">
+
+          <div class="wrapper-flex">
+
+            <div class="input-wrapper">
+              <label for="name">Name*</label>
+
+              <input type="text" name="name" id="name" required placeholder="Enter Your Name" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="emai">Email*</label>
+
+              <input type="text" name="email" id="email" required placeholder="Enter Your Email"
+                class="input-field">
+            </div>
+
+          </div>
+
+          <label for="message">Message*</label>
+
+          <textarea name="message" id="message" required placeholder="Type Your Message"
+            class="input-field"></textarea>
+
+          <button type="submit" class="btn btn-primary">
+            <span>Send Message</span>
+
+            <ion-icon name="paper-plane-outline"></ion-icon>
+          </button>
+
+        </form>
+
+        <ul class="contact-list">
+
+          <li>
+            <a href="mailto:support@website.com" class="contact-link">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <span>: support@website.com</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.techbizafrica.com/" class="contact-link">
+              <ion-icon name="globe-outline"></ion-icon>
+
+              <span>: www.techbizafrica.com</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+0011234567890" class="contact-link">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <span>: (+001) 123 456 7890</span>
+            </a>
+          </li>
+
+          <li>
+            <div class="contact-link">
+              <ion-icon name="time-outline"></ion-icon>
+
+              <span>: 9:00 AM - 6:00 PM</span>
+            </div>
+          </li>
+
+
+
+        </ul>
+       
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Contact End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container container1 py-5">
+      <div class="row" style="display: flex; justify-content: space-between; padding-top: 50px;">
+        <div class="col-lg-3 col-md-6">
+          <img src="used-images/parallax-images/logo.png" alt=""
+            style="height: 130px; width: 210px; margin-top: -40px; margin-left: -40px;">
+          <p style="font-size: 14px; font-family: 'Nunito Sans', sans-serif; margin-top: -20px;">Techbiz Ltd is a Leading ICT Systems
+            Integrator
+            Company in East Africa with Corporate Headquarters
+            in Nairobi, Kenya. We are an ISO 9001-2008 certified company.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Address</h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Mombasa, Kenya</p>
+          <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+254 707 883087</p>
+          <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 quick" >
+          <h4 class="text-light mb-4">Quick Links</h4>
+          <a class="btn btn-link" href="">About Us</a>
+          <a class="btn btn-link" href="">Contact Us</a>
+          <a class="btn btn-link" href="">Our Services</a>
+          <a class="btn btn-link" href="">Terms & Condition</a>
+          <a class="btn btn-link" href="">Support</a>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container  container2" >
+      <div class="copyright ">
+        <div class="row" style="margin-top: 20px; padding-bottom: 20px; margin-left: 0;">
+          <div class="col-md-6  text-md-start mb-3 mb-md-0" style="text-align: left;">
+            </a>All Right Reserved. &copy; Techbiz Limited.
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Footer End -->
+
+
+</div>
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  
+ 
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+  <!-- Circle Javascript -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- Nav Link Javascript -->
+  <script src="https://kit.fontawesome.com/deef5bf67e.js" crossorigin="anonymous"></script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+  
+
+
+
+
+ 
+  <!--Logos -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ 
+  <script>
+    $('.brand-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+
+  </script>
+
+
+</body>
+
+</html>
